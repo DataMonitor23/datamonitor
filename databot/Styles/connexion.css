@@ -1,0 +1,528 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* Mise en page générale */
+body {
+  font-family: Oswald;
+  background-color: #007679;
+}
+
+/* Styles pour le header */
+header {
+  background-color: #007679;
+  color: #333;
+  padding: 10px 0;
+  margin-bottom: 8px;
+  
+}
+
+.nav-link {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 97%;
+  margin-top: 10px;
+  padding: 0px 0px 0px 60px;
+  
+}
+/* Styles pour les liens de navigation */
+
+nav a.active {
+  color: #007679;
+  font-weight: bold;
+  /* Vert pour le lien actif */
+}
+
+.logo img {
+  width: 200px;
+  /* Ajustez la largeur selon vos besoins */
+  height: auto;
+  /* La hauteur s'ajustera automatiquement pour maintenir les proportions */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  /* Alignement vertical au centre */
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  width: 70%;
+}
+
+nav li {
+  margin: 0 10px;
+  margin-right: 15px;
+}
+
+nav a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  font-family: Oswald;
+  padding: 10px;
+}
+/* Styles pour l'image à côté du lien Se Connecter */
+.image-container {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  /* Espacement entre l'image et le texte */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+
+.image-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #007679;
+}
+/* Styles pour le lien S'inscrire */
+.signup-link {
+  width: 100px;
+  height: 100%;
+  background: #007679;
+  border-radius: 6px;
+  padding: 10px;
+  color: white;
+  border: none;
+  font-size: 19px;
+  font-family: Oswald;
+  font-weight: bold;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.884);
+  /* Ajoutez un peu d'espace intérieur */
+}
+
+/*styles des diiférentes Sections*/
+.Inscrip-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border: 3px solid #007679;
+  border-radius: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 20px;
+  height: 550px;
+  background-color: white;
+  
+}
+.Inscrip-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligne les éléments à gauche */
+  margin-right: 8px; /* Espace entre l'image et le contenu */
+  margin-top: -20px;
+  margin-bottom: 5px;
+}
+
+.Inscrip-content h1 {
+  font-size: 35px;
+  color: #007679;
+  font-weight: bold;
+  font-family: Oswald;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+.Inscrip-content h3 {
+  font-size: 22px;
+  color: black;
+  font-family: Oswald;
+  font-weight: 300;
+  margin-bottom: 35px;
+  margin-left: 50px;
+}
+
+.Inscrip-form {
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.Inscrip-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-left: 50px;
+  font-family: Oswald;
+}
+
+ .choices {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .choices label {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        font-family: Oswald
+    }
+
+    .choices input[type="checkbox"] {
+        margin: 10px;
+        margin-right: 5px;
+        margin-left: 55px;
+        
+    }
+
+.Inscrip-form button{
+  width: 100%;
+  padding: 10px;
+  background-color: #007679;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Inscrip-form button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 19px;
+  font-family: Oswald;
+
+}
+
+.Inscrip-form button:hover{
+  background-color: white;
+  border: 2px solid #007679;
+  border-radius: 10px;
+  color: #007679;
+  transition: all 1s ease;
+}
+.Inscrip-form button a:hover{
+  color: #007679;
+ 
+  
+}
+.Mot{
+    margin-top: 15px;
+    margin-left: 145px;
+    
+    
+    
+}
+.Mot h5 {
+        color: gray;
+        font-weight: 500;
+        font-size: 13px;
+        font-family: Oswald;
+    }
+
+.Mot h5 a{
+    color: #007679;
+    font-family: Oswald;
+    text-decoration: none;
+}
+
+.Mot1{
+    margin-top: 18px;
+    margin-left: 80px;
+    
+    
+}
+.Mot1 h5 {
+        color: gray;
+        font-weight: 500;
+        font-size: 13px;
+        font-family: Oswald;
+    }
+
+.Mot1 h5 a{
+    color: #007679;
+    font-family: Oswald;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.Inscrip-image {
+  flex: 2;
+  text-align: center;
+   position: relative;
+  
+  
+}
+
+.Inscrip-image #img1 {
+  width: 360;
+  height: 400px;
+  margin-top: 50px;
+}
+
+.Inscrip-image #img2{
+position: absolute;
+    top: -63px;
+    /* left: 0; */
+    right: 18px;
+  height: 600px;
+  width: 490px;
+}
+
+/*Responsive*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .Inscrip-section{
+    height: auto;
+    width: auto;
+  }
+  .Inscrip-image{
+    display: none;
+  }
+  .Inscrip-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligne les éléments à gauche */
+  margin-right: 8px; /* Espace entre l'image et le contenu */
+  margin-left: -50px;
+  margin-top: -20px;
+  margin-bottom: 5px;
+  height: auto;
+  width: auto; 
+}
+
+  .Inscrip-form {
+  width: 90%;
+  text-align: left;
+  transition: all 5s ease;
+}
+  .Inscrip-form input {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-left: 50px;
+  font-family: Oswald;
+}
+.Mot{
+    margin-top: 18px;
+    margin-left: 80px;
+    width: 90%;
+    transition: all 5s ease;
+}
+
+.Mot1{
+    margin-top: 18px;
+    margin-left: 80px;
+    transition: all 5s ease;
+}
+
+
+.choices{
+  width: 100%;
+}
+.all-choice{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  
+}
+.container{
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #007679;
+    margin-left: 10px;
+    width: 72%;
+    height: 38px;
+  }
+.container h3{
+  margin-left: 3px;
+  text-align: center;
+}
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 900px){
+  .Inscrip-section{
+    height: auto;
+    width: auto;
+  }
+  
+  .Inscrip-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: -25px;
+  margin-right: 40px;
+  margin-top: -20px;
+  margin-bottom: 5px;
+  height: auto;
+  width: auto; 
+}
+
+  .Inscrip-form {
+  width: 80%;
+  text-align: left;
+  transition: all 5s ease;
+  margin-right: 66px;
+}
+  .Inscrip-form input {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-left: 50px;
+  font-family: Oswald;
+}
+.Mot{
+    margin-top: 18px;
+    margin-left: 65px;
+    display: flex;
+    width: 90%;
+    transition: all 1s ease;
+}
+
+.Mot1{
+    margin-top: 18px;
+    margin-left: 65px;
+    display: flex;
+    width: 80%;
+    transition: all 5s ease;
+}
+
+.choices{
+  width: 100%;
+}
+.all-choice{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  
+}
+.container{
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #007679;
+    margin-left: 10px;
+    width: 72%;
+    height: 38px;
+  }
+.container h3{
+  margin-left: 3px;
+  text-align: center;
+}
+
+.Inscrip-image {
+  flex: 2;
+  margin-top: 60px;
+  margin-right: 10px;
+  
+  
+}
+
+.Inscrip-image #img1 {
+  width: 210;
+  height: 250px;
+  position: absolute;
+  transition: all 5s ease;
+  
+}
+
+.Inscrip-image #img2{
+position: relative;
+    top: -63px;
+    /* left: 0; */
+    right: 18px;
+  height: 450px;
+  width: 340px;
+  transition: all 5s ease;
+}
+   
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 950px) and (max-width: 1280px){
+  .Inscrip-section{
+    height: auto;
+    width: auto;
+  }
+
+  
+.Inscrip-image {
+  flex: 2;
+  margin-top: 90px;
+  margin-right: -100px;
+  
+  
+  
+}
+
+.Inscrip-image #img1 {
+  width: 210;
+  height: 250px;
+  position: absolute;
+  
+}
+
+.Inscrip-image #img2{
+position: relative;
+    top: -63px;
+    /* left: 0; */
+    right: 18px;
+  height: 450px;
+  width: 340px;
+}
+.Mot{
+    margin-top: 18px;
+    margin-left: 110px;
+    width: 100%;
+    transition: all 5s ease;
+}
+
+.Mot1{
+    margin-top: 18px;
+    margin-left: 56px;
+    width: 100%;
+    transition: all 5s ease;
+}
+
+
+}
+
+

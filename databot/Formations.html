@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formations</title>
+    <link rel="stylesheet" href="Styles/stylesform.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="images/1_1.png" alt="Logo" />
+        </div>
+        <ul class="nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="#" class="active">Formations</a></li>
+          <li><a href="index.html#six">Contacts</a></li>
+        </ul>  
+        <div class="nav-link">
+          <div class="image-container">
+            <img src="images/usersquare.jpg" alt="Image Se Connecter" />
+          </div>
+          <a href="Connexion.html">Se Connecter</a>
+          <button class="button"><a href="Inscrire.Html">Souscrire</a></button>
+          <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+      </nav>
+        
+    </header>
+    <script>
+      let menu = document.querySelector('#menu-icon');
+      let navbar = document.querySelector('.nav-list');
+
+      menu.onclick = () => {
+        navbar.style.display = 'flex';
+        menu.classList.toggle('bx-x');
+        navbar.classList.toggle('open');
+      }
+    </script>
+
+   <section class="Premiere-section">
+        <div class="texte">
+            <h2>Pourquoi se faire former sur l’utilisation du Databot ?</h2>
+        </div>
+    </section>
+
+    <section class="formation-section">
+         <div class="formation-text">
+    <p>Se former sur l'utilisation du DataBot est essentiel pour une utilisation efficace, précise et productive de cette technologie avancée, tout en maximisant les avantages qu'elle peut apporter à vos opérations et à votre prise de décision :</p>
+    <ol>
+      <li><span id="formation-span">Maximisation de l'Utilisation</span> : Une formation adéquate vous permettra de tirer le meilleur parti des fonctionnalités du DataBot. Vous saurez comment interagir avec lui, et utiliser ses capacités de collecte de données pour prendre des décisions éclairées. Vous apprendrez à configurer et utiliser certains composants du DataBot.</li>
+      <li><span id="formation-span">Utilisation Optimal des Données</span> : Vous apprendrez à interpréter correctement les données collectées et les résultats fournis par le DataBot. Cela vous permettra de prendre des mesures appropriées en fonction des informations reçues.</li>
+      <li><span id="formation-span">Compréhension des Fonctionnalités Avancées</span> : Les DataBots ont souvent des fonctionnalités avancées et des capacités d'apprentissage. Une formation vous aidera à comprendre comment exploiter ces fonctionnalités pour une meilleure analyse des données ou utilisation.</li>
+      <li><span id="formation-span">Personnalisation</span> : Une formation vous aidera à personnaliser les paramètres et les préférences du DataBot pour répondre spécifiquement à vos besoins et à ceux de votre environnement. Vous apprendrez à l'utilisation du DataBot dans vos projets personnels.</li>
+    </ol>
+     <button><a href="Formations1.html">Plus de détails</a></button>
+    
+  </div>
+  <div class="formation-image">
+    <img src="images/po_1.png" alt="Image DataBot">
+    <h2>Modèle Databot 2.0</h2>
+  </div>
+</section>
+
+<section class="seventh-section">
+      <div class="logo1">
+        <img src="images/p1.png" alt="Logo" />
+      </div>
+      <div class="seventh1-links">
+           <h2>Compagnie</h2>
+          <ul>
+        <li><a href="#">A propos</a></li>
+        <li><a href="#">Carrières</a></li>
+      </ul>
+      </div>
+        <div class="seventh-links">
+          <h2>Liens utiles</h2>
+          <ul>
+        <li><a href="Formations.html">Nos Formations</a></li>
+        <li><a href="#">Conditions d'utilisations</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#six">Contacts</a></li>
+      </ul>
+        </div>
+         <div class="seventh-contact">
+      <h2>Newsletter</h2>
+      <h3> Inscrivez vous à notre newsletter <br>
+           afin de recevoir les dernières informations </h3>
+          <form action="">
+            <input type="email" name="email" placeholder="Entrez votre email">
+            <button type="submit">S'Inscrire</button>
+          </form>
+        </div>
+      
+
+    </section>
+
+  <!-- footer -->
+    <footer class="footer">
+  <div class="footer-left">
+    00 BP 000 ABIDJAN 00
+  </div>
+  <div class="footer-center">
+    © 2023 DATA-MONITOR
+  </div>
+  <div class="footer-right">
+    <div class="footer-icon"><img src="images/🦆 icon _Facebook Square_.svg" alt=""></div>
+    <div class="footer-icon"><img src="images/🦆 icon _LinkedIn_.svg" alt=""></div>
+    <div class="footer-icon"><img src="images/🦆 icon _Twitter Square_.svg" alt=""></div>
+  </div>
+</footer>
+</body>
+</html>

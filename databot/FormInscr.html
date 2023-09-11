@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formations</title>
+    <link rel="stylesheet" href="Styles/stylesFormInscr.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="images/1_1.png" alt="Logo" />
+        </div>
+        <ul class="nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Formations1.html" class="active">Formations</a></li>
+          <li><a href="index.html#six">Contacts</a></li>
+        </ul>  
+        <div class="nav-link">
+          <div class="image-container">
+            <img src="images/usersquare.jpg" alt="Image Se Connecter" />
+          </div>
+          <a href="Connexion.html">Se Connecter</a>
+          <button class="button"><a href="Inscrire.Html">Souscrire</a></button>
+          <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+      </nav>
+        
+    </header>
+    <script>
+      let menu = document.querySelector('#menu-icon');
+      let navbar = document.querySelector('.nav-list');
+
+      menu.onclick = () => {
+        navbar.style.display = 'flex';
+        menu.classList.toggle('bx-x');
+        navbar.classList.toggle('open');
+      }
+    </script>
+
+    <section class="Inscrip-section">
+        <div class="Inscrip-content">
+    <h1>Formulaire d’Inscription</h1>
+    <h3>Informations personnelles</h3>
+     
+    <form class="Inscrip-form">
+        <input type="text" name="name" placeholder="Nom">
+        <input type="text" name="name" placeholder="Prenoms">
+        <input type="number" name="phone" placeholder="Numéro de Téléphone">        
+        <input type="email" name="email" placeholder="Adresse e-mail">
+        <input type="Location" name="Location" placeholder="Adresse"></input>
+        <button><a href="FormInscr1.html">Suivant</a></button>
+      </form>
+    </div>
+ 
+  <div class="Inscrip-image">
+    <img src="images/po.png" alt="Image DataBot">
+  </div>
+
+    </section>
+    
+</body>
+</html>

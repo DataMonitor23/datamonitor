@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Landing Page</title>
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+
+  </head>
+
+  <body>
+   <header>
+      <nav>
+        <div class="logo">
+          <img src="images/1_1.png" alt="Logo" />
+        </div>
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Formations.html" >Formations</a></li>
+          <li><a href="index.html#six">Contacts</a></li>
+        </ul>  
+        <div class="nav-link">
+          <div class="image-container">
+            <img src="images/usersquare.jpg" alt="Image Se Connecter" />
+          </div>
+          <a href="Connexion.html">Se Connecter</a>
+          <button class="button"><a href="Inscrire.Html">Souscrire</a></button>
+          <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+      </nav>
+        
+    </header>
+    <script>
+      let menu = document.querySelector('#menu-icon');
+      let navbar = document.querySelector('.nav-list');
+
+      menu.onclick = () => {
+        navbar.style.display = 'flex';
+        menu.classList.toggle('bx-x');
+        navbar.classList.toggle('open');
+      }
+    </script>
+
+
+    <section class="first-section">
+      <div class="text">
+        <h1>Surveiller vos espaces avec un système basé sur le DataBot.</h1>
+        <p>
+          Ne laissez pas la sécurité de vos espaces (Usines, Ateliers,
+          Maisons...) au hasard. Prenez le contrôle avec le système de
+          surveillance DataBot. Renseignez-vous dès aujourd'hui ou appelez-nous
+          dès maintenant pour plus d’informations..
+        </p>
+
+        <button><a href="#third-section">Commencer</a></button>
+      </div>
+
+      <div class="image">
+        <img src="images/po_1.png" alt="Image_1" id="image_1" />
+        <img src="images/image_3.png" alt="Nouvelle Image" id="image_2" />
+      </div>
+    </section>
+
+    <section class="second-section">
+      <img src="images/dashboard.jpeg" alt="Image 2" />
+    </section>
+
+    <!-- la troisième section -->
+    <section id="third-section">
+      <h2>
+        Pourquoi opter pour nos services de surveillance précise de
+        l'environnement ?
+      </h2>
+      <span></span>
+      <div class="elmts">
+        <div class="elmt_1">
+          <i class="fa-solid fa-rotate"></i>
+          <div class="textes">
+            <h3>Collecte de données environnementales</h3>
+            <p>
+              La puissante intelligence artificielle intégrée à nos systèmes
+              assure une analyse pointue des données collectées. Grâce à des
+              algorithmes avancés, notre module est capable de détecter les
+              tendances, les pics d'émission de CO2, les variations d'humidité,
+              les risques potentiels liés aux UV et bien plus encore. Profitez
+              d'une interprétation claire et rapide des données, mettant en
+              évidence les points critiques pour une action immédiate.
+            </p>
+          </div>
+        </div>
+
+        <div class="elmt_1">
+          <i class="fa-solid fa-sliders"></i>
+          <div class="textes">
+            <h3>Analyse intelligente et interprétation des données</h3>
+            <p>
+              Grâce à notre puissante intelligence artificielle intégrée, notre
+              système assure une analyse pointue des données collectées. Nos
+              algorithmes avancés permettent de détecter avec précision les
+              tendances, les pics d'émission de CO2, les variations d'humidité,
+              les risques potentiels liés aux UV, et bien plus encore. Vous
+              bénéficiez ainsi d'une interprétation claire et rapide des
+              données, mettant en évidence les points critiques qui nécessitent
+              une action immédiate.
+            </p>
+          </div>
+        </div>
+
+        <div class="elmt_1">
+          <i class="fa-solid fa-chart-line"></i>
+          <div class="textes">
+            <h3>Visualisation Intuitive et Décisions Proactives</h3>
+            <p>
+              Avec nos services, visualisez vos données en temps réel sur une
+              plateforme conviviale avec des tableaux de bord dynamiques. Restez
+              connecté grâce à notre application mobile conviviale. Prenez des
+              décisions proactives en accédant aux données et analyses
+              conditions et assurez la sécurité environnementale.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- quatrième section -->
+    <section class="fourth-section">
+      <h2>Collecte et Analyse de Données de quelques capteurs du DataBot</h2>
+      <span></span>
+        <div class="all-container">
+        <div class="container-section">
+        <div class="container">
+              <img src="images/image_1.png" alt="" />
+              <p>
+                Le capteur de CO2 mesure les niveaux de dioxyde de carbone
+                (CO2), essentiel à notre bien-être en fournissant des composants
+                vitaux à nos cellules et à notre santé. Cependant, des niveaux
+                élevés de CO2 peuvent perturber l'équilibre de l'oxygène (O2) et
+                de l'azote (N2), pouvant causer des maux de tête, de la fatigue,
+                des problèmes respiratoires, etc
+              </p>
+            </div>
+           
+          </div>
+          
+        
+        
+        <div class="container-section">
+        <div class="container">
+              <img src="images/image_4.png" alt="" />
+              <p>
+                Le détecteur de composés organiques volatils (VOC) évalue les
+                substances présentes dans l'air, cruciales pour nos fonctions
+                cellulaires. Néanmoins, des niveaux élevés de VOC peuvent
+                influencer la composition de l'air que nous respirons, pouvant
+                conduire à des irritations oculaires, des maux de tête, des
+                problèmes de peau, etc
+              </p>
+            </div>
+          </div>
+        
+
+        
+         <div class="container-section">
+            <div class="container">
+              <img src="images/image_5.png" alt="" />
+              <p>
+                Les rayons ultraviolets (UV) du soleil offrent des bienfaits
+                indispensables, contribuant à produire de la vitamine D et à
+                maintenir nos rythmes biologiques. Cependant, une exposition
+                excessive aux UV peut entraîner des problèmes tels que des coups
+                de soleil, un vieillissement prématuré de la peau et un risque
+                accru de cancer de la peau.
+              </p>
+            </div>
+          </div>
+
+        <div class="container-section">
+        <div class="container">
+              <img src="images/image_6.png" alt="" />
+              <p>
+                L'humidité atmosphérique est vitale pour notre bien-être, aidant
+                nos voies respiratoires et notre peau. Cependant,des niveaux
+                excessifs créent des défis. Le contrôle de l'humidité via la
+                ventilation ou les déshumidificateurs évite les problèmes, tout
+                en profitant de ses avantages pour une vie saine et agréable.
+              </p>
+            </div>
+          </div>
+          
+          </div>
+        
+    </section>
+
+    <section class="fifth-section">
+      <div class="content">
+        <h1>
+          FORMEZ-VOUS SUR L’UTILISATION DE NOTRE TECHNOLOGIE. COMMENCEZ
+          MAINTENANT !
+        </h1>
+      </div>
+
+      <div class="lien">
+        <a href="Formations.html">CLIQUEZ ICI</a>
+      </div>
+    </section>
+
+    <section id="six" class="sixth-section">
+      <div class="images">
+        <img src="images/image_7.png" alt="Image 1" id="image_10" />
+        <div class="form-container">
+      <form class="contact-form">
+        <h3>Contactez-nous</h3>
+        <input type="text" name="name" placeholder="Nom" required>
+        <input type="number" name="number" placeholder="Numéro de Téléphone" required>        
+        <input type="email" name="email" placeholder="Adresse e-mail" required>
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </div>
+    </section>
+
+    <section class="seventh-section">
+      <div class="logo1">
+        <img src="images/p1.png" alt="Logo" />
+      </div>
+
+      <div class="seventh1-links">
+           <h2>Compagnie</h2>
+          <ul>
+        <li><a href="#">A propos</a></li>
+        <li><a href="#">Carrières</a></li>
+      </ul>
+      </div>
+        <div class="seventh-links">
+          <h2>Liens utiles</h2>
+          <ul>
+        <li><a href="Formations.html">Nos Formations</a></li>
+        <li><a href="#">Conditions d'utilisations</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#six">Contacts</a></li>
+      </ul>
+        </div>
+         <div class="seventh-contact">
+      <h2>Newsletter</h2>
+      <h3> Inscrivez vous à notre newsletter <br>
+           afin de recevoir les dernières informations </h3>
+          <form action="">
+            <input type="email" name="email" placeholder="Entrez votre email">
+            <button type="submit">S'Inscrire</button>
+          </form>
+        </div>
+      
+
+    </section>
+    
+    <!-- footer -->
+    <footer class="footer">
+  <div class="footer-left">
+    00 BP 000 ABIDJAN 00
+  </div>
+  <div class="footer-center">
+    © 2023 DATA-MONITOR
+  </div>
+  <div class="footer-right">
+    <div class="footer-icon"><a href="https://www.facebook.com/edgar.kouassi.3/"><img src="images/🦆 icon _Facebook Square_.svg" alt=""></a></div>
+    <div class="footer-icon"><a href="https://www.facebook.com/edgar.kouassi.3/"><img src="images/🦆 icon _LinkedIn_.svg" alt=""></a></div>
+    <div class="footer-icon"><a href="https://www.facebook.com/edgar.kouassi.3/"><img src="images/🦆 icon _Twitter Square_.svg" alt=""></a></div>
+  </div>
+</footer>
+
+
+  </body>
+
+</html>

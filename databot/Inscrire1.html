@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formations</title>
+    <link rel="stylesheet" href="Styles/Inscrire1.css" />
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="images/p1.png" alt="Logo" />
+        </div>
+      </nav>
+    </header>
+
+    <section class="Inscrip-section">
+        <div class="Inscrip-content">
+    <h1>Inscription</h1>
+    <h3><li>Choix de l'offre</li></h3>
+     
+    <form class="Inscrip-form">
+        <input type="number" name="Number" placeholder="Numero de téléphone" required>            
+        <input type="Location" name="location" placeholder="Adresse" required>
+        <div class="form">
+          <div class="choices">
+              <label for="Type de Lieu">Type de Lieu</label>
+              <input type="Location" name="Type de Lieu" placeholder="Ex:Usines, Hopital." required>
+          </div>
+          <div class="choices">
+              <label for="Nombre de pièces">Nombre de pièces</label>
+              <input type="number" name="Nombre de pièces" required>
+          </div>
+        </div>
+        <button id="ajouterChamp">+ Ajouter un autre champ</button>
+
+        <div class="all-choice">
+          <div class="choice">
+            <input type="radio" name="choice" value="Mensuel">
+            <div class="container">
+              <h3>Mensuel</h3>
+            </div>
+          </div>
+          <div class="choice">
+            <input type="radio" name="choice" value="Annuel">
+            <div class="container">
+              <h3>Annuel</h3>
+            </div>
+          </div>
+        </div>
+        <button><a href="index.html">Souscrire</a></button>
+      </form>
+      
+      
+    </div>
+ 
+  <div class="Inscrip-image">
+    <img src="images/po_1.png" alt="Image DataBot" id="img1">
+    <img src="images/image_3.png" alt="Nouvelle Image" id="img2" />
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var boutonAjout = document.getElementById("ajouterChamp");
+      var form = document.querySelector("form"); // Conteneur des champs
+
+      boutonAjout.addEventListener("click", function () {
+        // Crée une nouvelle div.choices
+        var nouvelleDiv = document.createElement("div");
+        nouvelleDiv.className = "choices"; // Ajoute la classe "choices" à la nouvelle div
+        
+
+
+        // Crée un label pour le champ Type de Lieu
+        var nouveauLabel = document.createElement("label");
+        nouveauLabel.setAttribute("for", "Type de Lieu");
+        nouveauLabel.textContent = "Type de Lieu";
+
+        // Crée un input pour le champ Type de Lieu
+        var nouvelInputTypeLieu = document.createElement("input");
+        nouvelInputTypeLieu.type = "Location";
+        nouvelInputTypeLieu.name = "Type de Lieu";
+        nouvelInputTypeLieu.placeholder = "Ex:Usines, Hopital.";
+        nouvelInputTypeLieu.required = true;
+        nouvelInputTypeLieu.className = "choices-input"; // Ajoute la classe "choices-input"
+
+        // Crée un label pour le champ Nombre de pièces
+        var nouveauLabelNombrePieces = document.createElement("label");
+        nouveauLabelNombrePieces.setAttribute("for", "Nombre de pièces");
+        nouveauLabelNombrePieces.textContent = "Nombre de pièces";
+
+        // Crée un input pour le champ Nombre de pièces
+        var nouvelInputNombrePieces = document.createElement("input");
+        nouvelInputNombrePieces.type = "number";
+        nouvelInputNombrePieces.name = "Nombre de pièces";
+        nouvelInputNombrePieces.required = true;
+        nouvelInputNombrePieces.className = "choices-input"; // Ajoute la classe "choices-input"
+
+
+
+        // Ajoute les éléments créés à la nouvelle div.choices
+        nouvelleDiv.appendChild(nouveauLabel);
+        nouvelleDiv.appendChild(nouvelInputTypeLieu);
+        nouvelleDiv.appendChild(nouveauLabelNombrePieces);
+        nouvelleDiv.appendChild(nouvelInputNombrePieces);
+
+         var groupeInitial = document.querySelector(".form");
+        form.insertBefore(nouvelleDiv, groupeInitial.nextSibling);
+
+      });
+    });
+
+  </script>
+    </section>
+    
+</body>
+</html>

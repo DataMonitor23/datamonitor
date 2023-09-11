@@ -1,0 +1,965 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* Mise en page générale */
+body {
+  font-family: Oswald;
+}
+
+/* Styles pour le header */
+header {
+  background-color: white;
+  color: #333;
+  padding: 10px 0;
+  margin-bottom: 55px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: -15px;
+  padding: 0px 0px 0px 60px;
+  position: fixed;
+  background-color: white;
+  height: 12%;
+  
+}
+
+.nav-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+.nav-link a:hover{
+  border-bottom: 2px solid #007679;
+}
+
+
+/* Styles pour les liens de navigation */
+nav a.active {
+  color: #007679;
+  font-weight: bold;
+  
+  /* Vert pour le lien actif */
+}
+
+.logo img {
+  width: 200px;
+  /* Ajustez la largeur selon vos besoins */
+  height: auto;
+  /* La hauteur s'ajustera automatiquement pour maintenir les proportions */
+}
+
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  align-items: center;
+  
+}
+
+.nav-list a:hover{
+  border-bottom: 2px solid #007679;
+}
+nav li {
+  margin: 0 10px;
+  margin-right: 15px;
+}
+
+nav a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  font-family: Oswald;
+  padding: 10px;
+  font-weight: 390;
+}
+/* Styles pour l'image à côté du lien Se Connecter */
+.image-container {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  /* Espacement entre l'image et le texte */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+
+.image-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #007679;
+}
+/* Styles pour le lien S'inscrire */
+.button{
+  width: 100px;
+  height: 100%;
+  background: #007679;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.884);
+   
+  /* Ajoutez un peu d'espace intérieur */
+}
+
+.button:hover{
+  background-color: white;
+  border: 2px solid #007679;
+  border-radius: 6px;
+  transition: all 1s ease;
+}
+.button a:hover{
+  color: #007679;
+  border-bottom: none;
+  
+}
+.button a {
+  color: white;
+  font-size: 19px;
+  font-family: Oswald;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+/*styles des diiférentes Sections*/
+.Premiere-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #007679;
+  height: 100px;
+  
+  
+
+}
+
+.texte{
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+}
+
+/*deuxieme section*/
+.formation-section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  
+}
+
+.formation-text {
+  flex: 1;
+  text-align: justify;
+  font-size: 19px;
+  margin-right: 5px;
+  margin-left: 20px;
+  font-weight: 390;
+  
+
+ 
+}
+#formation-span{
+    color: #007679;
+    font-weight: bold;
+}
+
+.formation-text p {
+  margin-bottom: 20px; /* Ajoute de l'espace sous chaque paragraphe */
+  font-family: Oswald;
+}
+
+.formation-text li {
+  margin-bottom: 13px; /* Ajoute de l'espace entre les éléments de la liste */
+  margin-left: 35px;
+  font-family: Oswald;
+    width: 100%;
+}
+
+.formation-image {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.formation-image h2{
+  margin-top : -30px;
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 500;
+
+}
+
+.formation-image img {
+  max-width: 90%;
+  height: auto;
+}
+
+.formation-text button {
+  margin-top: 13px;
+  font-size: 20px;
+  font-family: Oswald;
+  font-weight: bold;
+  width: 150px;
+  height: 45px;
+  background-color: #007679;
+  border-radius: 6px;
+  color: white;
+  border: none;
+  margin-left: 35px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button a{
+text-decoration: none;
+ color: white;
+
+}
+.formation-text button:hover{
+  background-color: white;
+  border: 2px solid #007679;
+  border-radius: 6px;
+  transition: all 1s ease;
+}
+button a:hover{
+  color: #007679;
+
+  
+}
+
+.seventh-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #007679;
+  border: 0.1px solid white;
+  
+}
+
+
+.logo1 img{
+   width: 200px;
+  /* Ajustez la largeur selon vos besoins */
+  height: auto;
+  /* La hauteur s'ajustera automatiquement pour maintenir les proportions */
+  margin-top: 50px;
+}
+
+
+
+/* Style pour la liste des liens */
+.seventh-links ul {
+  padding-left: 10px;
+  list-style-type: square;
+  
+}
+
+.seventh-links h2{
+  color: white;
+  font-family: Oswald;
+  font-weight: 700;
+}
+
+.seventh-links li {
+  margin-bottom: 3px; /* Espacement entre les éléments de la liste */
+}
+.seventh-links li::marker {
+  color: white; /* Couleur des puces personnalisée */
+  
+}
+.seventh-links a {
+  font-family: Oswald;
+  font-weight: 300;
+  color: white; /* Couleur des liens */
+  text-decoration: none; /* Supprimer la soulignement des liens */
+}
+
+/* Style pour la liste des liens */
+.seventh1-links h2{
+  color: white;
+  font-family: Oswald;
+  font-weight: 700;
+}
+
+.seventh1-links ul {
+  padding-left: 10px;
+  list-style-type: square;
+}
+
+.seventh1-links li {
+  margin-bottom: 3px; /* Espacement entre les éléments de la liste */
+}
+.seventh1-links li::marker {
+  color: white; /* Couleur des puces personnalisée */
+}
+
+.seventh1-links a {
+  color: white; /* Couleur des liens */
+  text-decoration: none; /* Supprimer la soulignement des liens */
+  font-family: Oswald;
+  font-weight: 300;
+}
+
+/* Style pour le formulaire de contact */
+.seventh-contact h2 {
+  font-size: 20px; /* Taille de police pour le titre */
+  margin-top: 0; /* Supprimer la marge supérieure du titre */
+  font-family: Oswald;
+  font-weight: 700;
+  color: white;
+}
+
+.footer-contact form {
+  display: flex; /* Afficher les éléments du formulaire en ligne */
+}
+
+.seventh-contact input[type="email"] {
+  padding: 10px 20px; /* Espacement intérieur de l'input */
+  border: none; /* Supprimer la bordure */
+  border-radius: 7px 0px 0px 7px; /* Ajouter une légère courbure aux coins */
+  background: rgba(0, 0, 0, 0.17);
+  margin-right: -3px; /* Espacement entre l'input et le bouton */
+  height: 40px;
+  font-family: Oswald;
+}
+
+.seventh-contact button {
+  color: white; /* Couleur du texte du bouton */
+  border: none; /* Supprimer la bordure */
+  border-radius: 0px 7px 7px 0px; /* Ajouter une légère courbure aux coins */
+  padding: 10px 20px; /* Espacement intérieur du bouton */
+  cursor: pointer; /* Curseur pointer au survol */
+  background: #022324; 
+  font-family: Oswald;
+  font-weight: 700;
+  
+}
+
+/* Style pour le titre de contact */
+.seventh-contact h3 {
+  font-size: 16px; /* Taille de police pour le sous-titre */
+  margin-bottom: 15px; /* Supprimer la marge supérieure du sous-titre */
+  font-family: Oswald;
+  font-weight: 300;
+  color: white;
+}
+
+
+
+/*footer*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #007679;
+}
+
+.footer-left {
+  flex: 1;
+  margin-left: 35px;
+  color: white;
+  font-size: 13px;
+  font-family: Oswald;
+  font-weight: 400;
+
+
+}
+
+.footer-center {
+  flex: 5;
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  font-family: Oswald;
+  font-weight: 200;
+}
+
+.footer-right {
+  display: flex;
+  gap: 10px;
+  margin-right: 50px;
+}
+
+.footer-icon {
+  width: 15px;
+  height: 15px;
+  background-color: #007679;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px;
+}
+
+/*Responsive*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body{
+    overflow-x: hidden;
+  }
+   #menu-icon{
+        display: flex;
+    }
+    nav{
+      margin-left: -35px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: auto;
+      height: 10%;
+      
+      
+    }
+    nav a {
+      font-size: small;
+      display: flex;
+    }
+   
+    .logo img {
+  width: 100px;
+  /* Ajustez la largeur selon vos besoins */
+  height: 35px;
+  /* La hauteur s'ajustera automatiquement pour maintenir les proportions */
+  margin-top: 6px;
+  margin-right: 45px;
+  
+}
+    .image-container {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    margin-right: -5px;
+    
+  }
+
+    .nav-list{
+        position: fixed;
+        width: 100px;
+        height: 200px;
+        top:100px;
+        background: white; 
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+        transition: all .50s ease;
+        right: -60%;
+        border: 2px solid #007679;
+        align-items: center;
+
+    }
+
+    .nav-list a{
+        display: block;
+        margin-left:1px;
+        transition: all .50s ease; 
+        align-items: center; 
+    }
+    
+    .nav-list a:hover{
+        color: #007679;
+        transform: translateY(5px);
+        
+        
+    }
+    .nav-list a.active{
+        color: #007679;
+    }
+   
+  
+    .nav-list.open{
+        right: 2%;
+    }
+   .nav-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1px;
+    width: 400px;
+    margin-left: -100px;
+    
+  }
+    .button{
+  width: 70px;
+  height: 30px;
+  background: #007679;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.884);
+   
+  /* Ajoutez un peu d'espace intérieur */
+}
+    .button a{
+      font-size: small;
+      margin-top: -6.2px;
+      
+    }
+     .button a:hover{
+      border-bottom: none;
+    }
+    .Premiere-section{
+    display: flex;
+    background-color: #007679;
+    height: auto;
+    padding: 30px 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .texte{
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+/*deuxieme section*/
+.formation-section {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.formation-text {
+  flex: 1;
+  font-size: 19px;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-weight: 390;
+  width: 100%;
+  height: auto;
+}
+
+#formation-span {
+  color: #007679;
+  font-weight: bold;
+}
+
+.formation-text p {
+  margin-bottom: 20px;
+  font-family: Oswald;
+}
+
+.formation-text li {
+  margin-bottom: 13px;
+  margin-left: 35px;
+  font-family: Oswald;
+  width: 85%;
+  text-align: justify;
+  
+}
+
+.formation-image {
+  display: flex; /* Masque l'élément d'image, car il est en arrière-plan */
+ flex-direction: column;
+}
+.formation-image h2{
+  margin-top : -20px;
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 500;
+
+}
+
+.formation-text button {
+  margin-top: 13px;
+  font-size: 20px;
+  font-family: Oswald;
+  font-weight: bold;
+  width: 150px;
+  height: 45px;
+  background-color: #007679;
+  border-radius: 6px;
+  color: white;
+  border: none;
+  margin-left: 35px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+.formation-text button:hover {
+  background-color: white;
+  border: 2px solid #007679;
+  border-bottom: none;
+  border-radius: 6px;
+  transition: all 1s ease;
+}
+
+button a:hover {
+  color: #007679;
+  border-bottom: none;
+}
+.seventh-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #007679;
+  border: 0.1px solid white;
+  align-items: center;
+  height: auto;
+}
+  .logo1 img{
+    margin-top: -13px;
+    
+  }
+
+ .seventh1-links{
+    margin-left: -200px;
+  }
+  .seventh-links{
+    margin-top: -90px;
+    margin-left: 200px;
+  }
+  .seventh-contact{
+    margin-top: 15px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 900px){
+ body{
+    overflow-x: hidden;
+  }
+  #menu-icon{
+        display: flex;
+        margin-left: 20px ;
+    }
+
+  header {
+  background-color: white;
+  color: #333;
+  padding: 10px 0;
+  margin-bottom: 100px;
+}
+
+   nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: white;
+    width: 100%; 
+   }
+   
+  .nav-list{
+        position: fixed;
+        width: 120px;
+        height: 220px;
+        top:100px;
+        background: white; 
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+        transition: all .50s ease;
+        right: -60%;
+        border: 2px solid #007679;
+        align-items: center;
+
+    }
+
+    .nav-list a{
+        display: block;
+        margin-left:1px;
+        transition: all .50s ease; 
+        align-items: center; 
+    }
+    
+    .nav-list a:hover{
+        color: #007679;
+        transform: translateY(5px);
+        
+        
+    }
+    .nav-list a.active{
+        color: #007679;
+    }
+   
+  
+    .nav-list.open{
+        right: 2%;
+    }
+    .texte{
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}   
+
+    .Premiere-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px 60px 0px ;
+  background-color: #007679;
+  height: 100px;
+  
+} 
+  /*deuxieme section*/
+.formation-section {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.formation-text {
+  flex: 1;
+  font-size: 19px;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-weight: 390;
+  width: 100%;
+  height: auto;
+}
+
+#formation-span {
+  color: #007679;
+  font-weight: bold;
+}
+
+.formation-text p {
+  margin-bottom: 20px;
+  font-family: Oswald;
+}
+
+.formation-text li {
+  margin-bottom: 13px;
+  margin-left: 35px;
+  font-family: Oswald;
+  width: 85%;
+  text-align: justify;
+  
+}
+
+.formation-image {
+  display: flex; 
+  flex-direction: column;
+}
+.formation-image h2{
+  margin-top : -30px;
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 500;
+
+}
+
+.formation-text button {
+  margin-top: 13px;
+  font-size: 20px;
+  font-family: Oswald;
+  font-weight: bold;
+  width: 150px;
+  height: 45px;
+  background-color: #007679;
+  border-radius: 6px;
+  color: white;
+  border: none;
+  margin-left: 35px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+.formation-text button:hover {
+  background-color: white;
+  border: 2px solid #007679;
+  border-bottom: none;
+  border-radius: 6px;
+  transition: all 1s ease;
+}
+
+button a:hover {
+  color: #007679;
+  border-bottom: none;
+}
+.seventh-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  padding-right: 10ox;
+  background-color: #007679;
+  border: 0.1px solid white;
+  
+}
+ .logo1 img{
+  margin-left: -15px;
+ }
+ .seventh1-links{
+  margin-left: 20px;
+}
+  .seventh-links{
+  margin-left: 20px;
+  
+}  
+  .seventh-contact{ 
+    margin-left: 12px;
+    
+  }
+  .seventh-contact form{
+    display: flex;
+    margin-top: 5px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 950px) and (max-width: 1280px){
+    header {
+  background-color: white;
+  color: #333;
+  padding: 10px 0;
+  margin-bottom: 120px;
+}
+ .nav{
+  height: 5%;
+ }
+  
+  .nav-list{
+   
+    width: 450px;
+  
+  }
+  .nav-list a{
+    
+    margin-right: -20px;
+  }
+
+  .nav-link{
+    width: 350px;
+    margin-left: 5px;
+  }
+
+  .logo img{
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+    .Premiere-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px 60px 0px ;
+  background-color: #007679;
+  height: 100px;
+  margin-top: -10px;
+  
+}
+  /*deuxieme section*/
+.formation-section {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.formation-text {
+  flex: 1;
+  font-size: 19px;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-weight: 390;
+  width: 100%;
+  height: auto;
+}
+
+#formation-span {
+  color: #007679;
+  font-weight: bold;
+}
+
+.formation-text p {
+  margin-bottom: 20px;
+  font-family: Oswald;
+}
+
+.formation-text li {
+  margin-bottom: 13px;
+  margin-left: 35px;
+  font-family: Oswald;
+  width: 85%;
+  text-align: justify;
+  
+}
+  .formation-image {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.formation-image h2{
+  margin-top : -30px;
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 500;
+
+}
+
+.formation-image img {
+  max-width: 90%;
+  height: auto;
+}
+
+
+}
+
+@media only screen and (min-width: 1430px) and (max-width: 1445px){
+
+  header{
+    margin-bottom: 70px;
+  }
+.Premiere-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #007679;
+  height: 100px;
+}
+
+}
+
